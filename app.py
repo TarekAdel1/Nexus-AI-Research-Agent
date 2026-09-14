@@ -74,14 +74,6 @@ with st.sidebar:
     st.title("⚡ Settings")
     st.caption("Active configuration and session space.")
 
-    groq_api_key = st.text_input(
-        "Groq API Key",
-        type="password",
-        value=os.getenv("GROQ_API_KEY", ""),
-        placeholder="gsk_...",
-        help="Paste your personal Groq API key here.",
-    )
-
     st.markdown("**Active Model**")
     st.code("openai/gpt-oss-120b", language="text")
 
